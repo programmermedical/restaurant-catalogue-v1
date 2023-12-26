@@ -1,0 +1,1 @@
+import Posts from"./DATA.json";class DataSource{static searchPost(t){return new Promise(((s,e)=>{const o=Posts.restaurants.filter((s=>s.name.toUpperCase().includes(t.toUpperCase())));o.length?s(o):e(`${t} is not found!`)}))}}export default DataSource;
